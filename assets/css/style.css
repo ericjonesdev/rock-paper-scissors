@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Rubik+Spray+Paint&display=swap');
+
+
 body {
     background: rgb(145, 188, 248);
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.game-area {
+    height: 600px;
+    width: 75vw;
+    max-width: 1440px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: min-content;
+    justify-content: center;
+    background-color: rgb(183, 182, 181);
+    margin: auto;
+}
+
+.choice-area {
+    height: 25vh;
+    width: 500px;
+    border: 1px solid red;
+}
+
+.left-panel {
+    height: 25vh;
+    width: 500px;
+    border: 1px solid red;
+}
+
+.right-panel {
+    height: 25vh;
+    width: 500px;
+    border: 1px solid red;
 }
