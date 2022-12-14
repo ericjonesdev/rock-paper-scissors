@@ -48,7 +48,7 @@ h1 {
     border: 3px solid rgb(248, 245, 38);
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .main-section {
@@ -93,5 +93,13 @@ div > img {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+     .main-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
   }
