@@ -1,39 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Rubik+Spray+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Unbounded&display=swap');
 
+:root {
+    --primary: hsla(348, 97%, 63%, 0.65);
+    --secondary: hsla(230, 96%, 62%, 0.65);
+}
 
 body {
-    background: rgb(145, 188, 248);
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.7;
     font-size: 18px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+                url('../images/pexels-cottonbro-studio-10506091.jpg') no-repeat center center / cover;
+    
+    
+    
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+h1 {
+    font-family: unbounded, cursive;
+    color:rgb(47, 217, 217);
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .game-area {
-    height: 600px;
+    height: 700px;
     width: 75vw;
     max-width: 1440px;
-    border: 1px solid red;
+    border: 3px solid rgb(205, 247, 22);
     display: grid;
     grid-template-columns: min-content;
     justify-content: center;
-    background-color: rgb(183, 182, 181);
     margin: auto;
 }
 
 .choice-area {
     height: 25vh;
     width: 500px;
-    border: 1px solid red;
+    border: 3px solid rgb(248, 245, 38);
 }
 
 .left-panel {
     height: 25vh;
     width: 500px;
-    border: 1px solid red;
+    border: 3px solid rgb(244, 248, 39);
 }
 
 .right-panel {
     height: 25vh;
     width: 500px;
-    border: 1px solid red;
+    border: 3px solid rgb(241, 248, 37);
 }
+
+div > img {
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
