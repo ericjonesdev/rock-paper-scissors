@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets\css\style.css">
 </head>
-<div>
+<body>
     <!--header section starts here-->
     <div>
         <header>
@@ -18,29 +18,34 @@
     <!--game section starts here-->
     <div id="gameDiv">
         <section class="choice-area" id="choiceArea">
-            <h2>Make your decision:     </h2>
+            <div>
+            <h2>Pick One:</h2>
+            </div>
             <div class="choice-button" id="choiceButton">
                 <button aria-label="Rock" class="choiceBtn" data-selection="rock">ROCK</button>
                 <button aria-label="Paper" class="choiceBtn" data-selection="paper">PAPER</button>
                 <button aria-label="Scissors" class="choiceBtn" data-selection="scissors">SCISSORS</button>
             </div>
             <div class="winner-area">
-                <h2 class="gameText" id="resultText">Player x Wins!</h2>
+                <h2 class="gameText" id="winnerIs">Player x Wins!</h2>
             </div>
         </section>
+            <div class="you-chose">
+            <h2>You Chose: <span id="result"></span></h2>
+            </div>
         <main class="main-section">
         <section>
         <div class="player" id="player">
             <div class="score-one" id="scoreOne"></div>
-            <h2 class="gameText" id="playerText">Player:<span class="player-score">0</span></h2>
-            <img id="player-image" src="assets\images\paper.jpg" alt="Rock Paper Scissors">
+            <h2>Player: <span id="player-choice"></span></h2>
+            <img id="player-image" src="assets/images/rock-paper-scissors-1238146.jpg" alt="Rock Paper Scissors">
         </div>
         </section>
         <section>
         <div class="computer" id="computer">
             <div class="score-two" id="scoreTwo"></div>
-            <h2 class="gameText" id="computerText">Computer:<span class="computer-score">0</span></h2>
-            <img id="computer-image" src="assets\images\scissors.jpg" alt="Rock Paper Scissors">
+            <h2>Computer: <span id="computer-choice"></span></h2>
+            <img id="computer-image" src="assets/images/rock-paper-scissors-1238146.jpg" alt="Rock Paper Scissors">
         </div>
         </section>
         </main>
