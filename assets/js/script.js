@@ -6,5 +6,5 @@ let userChoice
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
-    userChoiceDisplay.innerHTML = userChoice
+    resultDisplay.innerHTML = userChoice
 }))
