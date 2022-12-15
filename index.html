@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets\css\style.css">
 </head>
-<body>
+<div>
     <!--header section starts here-->
     <div>
         <header>
@@ -16,32 +16,35 @@
     </div>
 
     <!--game section starts here-->
+    <div id="gameDiv">
         <section class="choice-area" id="choiceArea">
-            <p>Make your decision:</p>
+            <h2>Make your decision:     </h2>
             <div class="choice-button" id="choiceButton">
-                <button></button>
-                <button></button>
-                <button></button>
+                <button class="choiceBtn">ROCK</button>
+                <button class="choiceBtn">PAPER</button>
+                <button class="choiceBtn">SCISSORS</button>
             </div>
             <div class="winner-area">
-                <p class="who-wins" id="winnerId">Player x Wins!</p>
+                <h2 class="gameText" id="resultText">Player x Wins!</h2>
             </div>
         </section>
         <main class="main-section">
         <section>
         <div class="left-panel" id="leftArea">
-            <div class="score-one" id="scoreOne">Your Score:</div>
+            <div class="score-one" id="scoreOne"></div>
+            <h2 class="gameText" id="playerText">Player:<span class="result-score">0</span></h2>
             <img src="assets\images\paper.jpg" alt="playerOne">
         </div>
         </section>
         <section>
         <div class="right-panel" id="rightArea">
-            <div class="score-two" id="scoreTwo">Your Score:</div>
+            <div class="score-two" id="scoreTwo"></div>
+            <h2 class="gameText" id="computerText">Computer:<span class="result-score">0</span></h2>
             <img src="assets\images\scissors.jpg" alt="computerSide">
         </div>
         </section>
         </main>
-    
+    </div>
     <!--footer section-->
     <footer>
         <div class="footer-style">
@@ -53,6 +56,6 @@
     </footer>
 
     <!--scripts-->
-    <script src="assets\js\app.js"></script>
+    <script src="assets\js\script.js"></script>
 </body>
 </html>
