@@ -20,9 +20,9 @@
         <section class="choice-area" id="choiceArea">
             <h2>Make your decision:     </h2>
             <div class="choice-button" id="choiceButton">
-                <button class="choiceBtn" data-selection="rock">ROCK</button>
-                <button class="choiceBtn" data-selection="paper">PAPER</button>
-                <button class="choiceBtn" data-selection="scissors">SCISSORS</button>
+                <button aria-label="Rock" class="choiceBtn" data-selection="rock">ROCK</button>
+                <button aria-label="Paper" class="choiceBtn" data-selection="paper">PAPER</button>
+                <button aria-label="Scissors" class="choiceBtn" data-selection="scissors">SCISSORS</button>
             </div>
             <div class="winner-area">
                 <h2 class="gameText" id="resultText">Player x Wins!</h2>
@@ -30,17 +30,17 @@
         </section>
         <main class="main-section">
         <section>
-        <div class="left-panel" id="leftArea">
+        <div class="player" id="player">
             <div class="score-one" id="scoreOne"></div>
-            <h2 class="gameText" id="playerText">Player:<span class="result-score">0</span></h2>
-            <img src="assets\images\paper.jpg" alt="playerOne">
+            <h2 class="gameText" id="playerText">Player:<span class="player-score">0</span></h2>
+            <img id="player-image" src="assets\images\paper.jpg" alt="Rock Paper Scissors">
         </div>
         </section>
         <section>
-        <div class="right-panel" id="rightArea">
+        <div class="computer" id="computer">
             <div class="score-two" id="scoreTwo"></div>
-            <h2 class="gameText" id="computerText">Computer:<span class="result-score">0</span></h2>
-            <img src="assets\images\scissors.jpg" alt="computerSide">
+            <h2 class="gameText" id="computerText">Computer:<span class="computer-score">0</span></h2>
+            <img id="computer-image" src="assets\images\scissors.jpg" alt="Rock Paper Scissors">
         </div>
         </section>
         </main>

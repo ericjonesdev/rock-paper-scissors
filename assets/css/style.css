@@ -80,7 +80,7 @@ h1 {
     margin-top: 9px;
 } 
 
-.left-panel {
+.player {
     height: min-content;
     width: min-content;
     border: 3px solid rgb(244, 248, 39);
@@ -89,7 +89,7 @@ h1 {
     margin: 0;
 }
 
-.right-panel {
+.computer {
     height: min-content;
     width: min-content;
     border: 3px solid rgb(241, 248, 37);
