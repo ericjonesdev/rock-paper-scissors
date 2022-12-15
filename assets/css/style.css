@@ -61,10 +61,16 @@ h1 {
     background-color: rgb(69, 90, 244);
     border: 2px solid rgb(212, 252, 14);
     border-radius: 10px;
+    cursor: pointer;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: 500;
     margin: 2px 2px 2px 2px;
+    transition: 100ms;
+}
+
+.choice-area button:hover {
+    transform: scale(1.2);
 }
 
 .main-section {
@@ -90,6 +96,12 @@ h1 {
     border-radius: 10px;
     padding: 0;
     margin: 0;
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: 20px;
+    color: rgb(249, 246, 246);
 }
 
 div > img {
