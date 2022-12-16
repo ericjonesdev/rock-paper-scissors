@@ -25,9 +25,10 @@
                 <button aria-label="Rock" id="rock" data-selection="rock">ROCK</button>
                 <button aria-label="Paper" id="paper" data-selection="paper">PAPER</button>
                 <button aria-label="Scissors" id="scissors" data-selection="scissors">SCISSORS</button>
+                <button onclick = "reset()" id="reset">Reset</button>
             </div>
             <div class="winner-area">
-                <h2 class="gameText" id="winnerIs">Player x Wins!</h2>
+                <h2 class="gameText" id="winnerIs"><span id="result-output"></span></h2>
             </div>
         </section>
             <div class="you-chose">
