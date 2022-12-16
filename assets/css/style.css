@@ -108,6 +108,10 @@ div > img {
     
   }
 
+  .you-chose h2{
+    margin-left: 20px;
+  }
+
   footer {
     display: flex;
     justify-content: center;
