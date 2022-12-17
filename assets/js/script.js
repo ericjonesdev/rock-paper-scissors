@@ -12,6 +12,7 @@ let computerChoice
 let result  
 let playerChoice 
 
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
     resultDisplay.innerHTML = userChoice
@@ -62,10 +63,12 @@ function getResult () {
 }
     
 function gameImages(playerChoice, computerChoice) {
+    console.log(playerChoice, computerChoice)
 
-    player.Image.src = `assets/images/${choices[playerChoice]}.jpg`
-	player.alt = choices [userChoice];
+    playerImage.src = `assets/images/${playerChoice}.jpg`
+	playerImage.alt = choices [userChoice];
 
-	computerImage.src = `assets/images/${choices[computerChoice]}.jpg`
+	computerImage.src = `assets/images/${computerChoice}.jpg`
 	computerImage.alt = choices[computerChoice]
 }
+
