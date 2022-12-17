@@ -1,13 +1,16 @@
 const computerChoiceDisplay = document.getElementById('computer-choice')
+const buttons = document.getElementsByClassName('control')
 const userChoiceDisplay = document.getElementById('player-choice')
 const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
 const resultOutput = document.getElementById('result-output')
 const playerImage = document.getElementById('player-image')
 const computerImage = document.getElementById('computer-image')
+const choices = ["rock", "paper", "scissors"]
 let userChoice
 let computerChoice
 let result  
+let playerChoice 
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
@@ -56,11 +59,13 @@ function getResult () {
     resultOutput.innerHTML = result
 }
     
-function reset () {
-    computerChoice = '?'
-    computerChoiceDisplay.innerHTML = computerChoice
-    randomNumber = 0
-    userChoice = '?'
-    userChoiceDisplay.innerHTML = userChoice  
-    resultDisplay.innerHTML = '?'
+function gameImages(playerChoice) {
+
+    player.Image.src = `assets/images/${choices[userChoice]}.jpg`
+	player.alt = choices [userChoice];
+
+	let computerChoice = Math.floor(Math.random() * 3)
+
+	computerImage.src = `assets/images/${choices[computerChoic]}.jpg`
+	computerImage.alt = choices[computerChoice]
 }
