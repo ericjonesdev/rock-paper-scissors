@@ -15,7 +15,9 @@ let playerChoice
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
     resultDisplay.innerHTML = userChoice
-    generateComputerChoice()
+    compChoice = generateComputerChoice()
+    gameImages(userChoice, computerChoice)
+
     getResult()
 }))
 
@@ -59,13 +61,11 @@ function getResult () {
     resultOutput.innerHTML = result
 }
     
-function gameImages(playerChoice) {
+function gameImages(playerChoice, computerChoice) {
 
-    player.Image.src = `assets/images/${choices[userChoice]}.jpg`
+    player.Image.src = `assets/images/${choices[playerChoice]}.jpg`
 	player.alt = choices [userChoice];
 
-	let computerChoice = Math.floor(Math.random() * 3)
-
-	computerImage.src = `assets/images/${choices[computerChoic]}.jpg`
+	computerImage.src = `assets/images/${choices[computerChoice]}.jpg`
 	computerImage.alt = choices[computerChoice]
 }
