@@ -1,108 +1,219 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Benjamin Banneker
 
-Welcome ericjonesdev,
+<a href="https://ericjonesdev.github.io/rock-paper-scissors/">Visit the live webpage</a>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# 1. Project Overview
 
-`python3 -m http.server`
+Paper, Rock, and Scissor is an interactive web app centered on allowing the user to pass the time playing a fun game. The look, feel, and functionality will be explained in the following sections:
+## 1.1 Project Objective
 
-A blue button should appear to click: _Make Public_,
+The project objective was to have 
 
-Another blue button should appear to click: _Open Browser_.
+## 1.2 User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+### First time users
 
-Another blue button should appear to click: _Open Browser_.
+- As a first time user I want an excellent visual experience
+- As a first time user I want to quickly understand what the site is about. 
+- As a first time user I want to also have video and interactive content.
+- As a first time user I want the ability to easily navigate the site.
+- As a first time user I want to easily distingish this site as a trusted site which is safe to use. 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Returning users
 
-To log into the Heroku toolbelt CLI:
+- As a returning user I would like to see regular updates.
+- As a returning user I would like to have periodic updates.
+- As a returing user I would like to learn more about the subject matter. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Site Owner
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- As a site owner I want to provide an intuitive learning experience.
+- As a site owner I want to funnel traffic to my subscription list.
+- As a site owner I want to provide a way for users to contact me.
 
-------
+## 1.3 Design
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+To serve as a historical website, a simplistic but functional design was needed. This combination served two primary purposes. The first purpose, simplicity, was used to maintaine a pleasant look and asthetic to cater to younger users, while having content structures that would appeal to teachers and higher acedmics. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+Where applicable, accessibility and useability regarding color schematics, semantic markup, and overall structure where adhered to. 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The familiar colors red, white and blue were used due to the subject matter and his assistance in designing the American captial. The home decor color "rule" of 60%, 30%, and 10% was applied to the genre of web development, so as not to over-use one color while relying too heavily on another. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<img src="assets/images/color rule1.png">
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The rule for color uses was as follows: 60% white tones, 30% blue, and 10% red tones.  This made for an eye-pleasing user experience. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Aside from the 10% red color schema, the base color palette (along with slight variations) is as follows in the image below:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<img src="assets/images/ColorSpace - Color Palettes Generator and Color Gradient Tool.png">
+ 
+To accomodate for the variying viewport types, media queries were employed for overall responsiveness across platforms. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+# 2. Features
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The website was organized into three main pages which are the home, about, and contact page.
+## 2.1 Header & Navbar
+The website was organized into three main pages which are the home, about, and contact page. Internal links were used on the home page to link to the various sections of that page, thereby creating a more efficient user experience. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<img src="assets/images/Benjamin Bannaker_ Navbar1.png">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## 2.2 About Us section
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The About us section illustrates to the user the reasons behind the website creation and informs as to the nature of the site owners.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<img src="assets/images/Benjamin Bannaker_ AboutUs12.png">
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## 2.3 Legendary section
 
-------
+The Legendary section is used to illustrate some of the crowning achievements of Benjamin Banneker. This section should instill in the mind of the user exactly why this historical personage was so important to American history and, thereby, make plain why the site was created.
+<img src="assets/images/Benjamin Bannaker_ Legendary2.png">
 
-## FAQ about the uptime script
+## Additional Information (Video Section)
 
-**Why have you added this script?**
+The last section before the site footer is the video section, which serves as a video media source detailing further information about the site topic. 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+This section, along with the Legendary section was styled to stack, one above the other, on smaller devices, principally mobile.
 
-**How will this affect me?**
+<img src="assets/images/BenBanneker_videosection.png">
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## 2.6 Contact Us Form Page
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+The contact us form shared the overal color rule schematic as all other pages of the site, with highlight red colors being used to draw emphasis to the first and last name text input areas. 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+On mobile devices the form resizes to fit the appropriate area seamlessly. 
 
-**So….?**
+<img src="assets/images/Benjamin Bannaker_ contactus.png">
+<img src="assets/images/Benjamin Bannaker_ contactus1.png">
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## 2.7 The Footer Section
+The footer section included links to the relevant social media sites for Benjamin Banneker. The links will open to a new tab to allow easy navigation for the user.
 
-**Can I opt out?**
+<img src="assets/images/Benjamin Bannaker_ footer1.png">
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## 2.8 Future development
+Additional features (future)that are desired to be developed and implement are as follows:
+  1. Additional page beautification (form section) and added background images.
+  2. Embedded google maps which show historical family dwellings and any known Benjamin Banneker museum information.
+  3. Interactive Javascript history learning game page.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+# 3. Testing
 
-**Anything more?**
+## 3.1 HTML Validation 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+All documents were validated using the free W3C Markup validation service. A majority of initial errors received pertained to Font Awsome element duplicate statements, received due to styling and re-styling elements and code clean-up errors. 
 
----
+Chrome development tools, as well as Firefox development tools where used to view each page and page behavior for functionality.
 
-Happy coding!
+### Home Page
+<img src="assets/images/Index_html - Nu Html Checker.png">
+
+### About Us Page
+
+<img src="assets/images/About us_html - Nu Html Checker.png">
+
+### Contact Us Page
+
+<img src="assets/images/Contact_html - Nu Html Checker.png">
+
+## 3.2 CSS Validation
+
+To validate the site CSS, the site CSS file was uploaded to the W3C Jigsaw validation service. The first attempt indicated a CSS rule which should have been omitted if not in use. This was corrected to have the second submittal be a success.
+
+<img src="assets/images/W3C CSS Validator results for https___ericjonesdev.github.io_benjamin-banneker-history_index.html (C.png">
+
+## Acessibility Validation Service
+
+The Wave web accessibility evaluation tool was used to ensure that the site passed the industry-standard accessibility criteria. The majority of initial errors  revolved around non-optimal use of color contrast within the site navbar. The corrective action was to increase the navbar text font size to above 18px, as contrast standards are not as stringent, when taking bigger font into account. 
+
+<img src="assets/images/WAVE Report of Benjamin Bannaker_ Multi-genius.png">
+
+## 3.4 Lighthouse 
+
+The Lighthouse performance app was used to test the website performance.
+<hr>
+
+<img src="assets/images/PageSpeed Insights.png">
+
+## 3.5 Manual Testing User Stories
+
+|       User Story                                                                                             |                       Testing                                                                                                                             |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| As a first time user I want an excellent visual experience                                         | Scrolling the home page will illustrate to the user that thought and care was taken in the design.                                                 |
+| As a first time user I want to quickly understand what the site is about.                          | Clicking on the About Us page will inform the user as to the nature of this site.                                                                  |
+| As a first time user I want to also have video and interactive content.                            | Either clicking on the video link in the navbar or scrolling down will show the user the video content.                                            |
+| As a first time user I want the ability to easily navigate the site.                               | Clicking on the navbar links will take the user to internal as well as external page links.                                                        |
+| As a first time user I want to easily distingish this site as a trusted site which is safe to use. | Using the W3School verification code, easily seen on the website will foster trust with the user.                                                  |
+| As a site owner I want to provide an intuitive learning experience.                                | Proving an easy to use layout with clearn markup will allow the user a seamless learning experience.                                               |
+| As a site owner I want to funnel traffic to my subscription list.                                  | Using a referral link within the about us page text, pointing to the sign-up form will funnel the necessary traffic towards the subscription list. |
+| As a site owner I want to provide a way for users to contact me.                                   | The contact us page will be the medium through which site users can contact our team.                                                              |
+
+## 3.6 Bugs and Fixes
+
+Some bugs that were discovered and corrected throughout the development:
+ | Bug                                                                                                                  | Fix                                                                                                |
+ | ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+ | Youtube embedded video thumbnail was not showing up on the live site                                                      | This was caused by an incorrect url schema, which included the original ommission of the http:// heading |
+ | Legendary section headers and paragraph were not centering given the original coding format(s) on smaller viewport sizes. | The temporary fix was to introduce some padding statements that pushed the text to the desired location  |
+ | About us page was originally not displaying any paragraph or other element text                                                                                                                          |  Caused by the wrong width and height statements on the containing div. The correct settings were implemented to correct this.                                                                                                        |
+
+# 4. Deployment
+This website was developed using an online version of VS code, via the gitpod/github applications and repositories. The following steps were taken:
+
+    1. Navigate to the Benjamin Banneker githup repository
+    2. Select the settings tab
+    3. Select Pages within the left navigation payne
+    4. Select the deploy from branch (main branch) under source
+    5. Upon succesful completion of the app and refresh of page the link is displayed
+
+
+   You may view the Github repository by clicking <a href="https://github.com/ericjonesdev/benjamin-banneker-history">here</a>.
+
+   # 5. Credits
+   ## 5.1 Video Section Information
+   The following tutorial and associated repository link was used to refrence the code necessary to render the look, positioning and responsiveness of the iframe element:
+
+Title - How To Make iframe's Responsive
+https://youtu.be/X4t0JxiBeO0
+
+Eventually learning that my code did not have to be as elaborate as the example, the lazy load method was called within the iframe to circumvent bad page load times.
+
+Using a lazy load method for the iframe enabled a faster page load time according to the <a href="https://pagespeed.web.de">PageSpeed</a> performance checker. 
+
+The navbar was styled for responsiveness according to this reference and with original edits:
+
+Title - Create a responsive navigation nav with no JS! by Kevin Powell
+https://youtu.be/8QKOaTYvYUA
+
+## 5.2 Flexbox Tutorial
+
+The following tutorial(s) were used as a reference to position and display elements using flexbox:
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+## 5.3 Historial References
+
+The following references were used for the body of webpage historical writing and main image:
+
+Wikipedia. (2022) Benjamin Banneker. Retrieved 26.11.2022 from the online database, https://en.wikipedia.org/wiki/Benjamin_Banneker
+
+Whitehousehistory.org. (2022)Benjamin Banneker: The Black Tobacco Farmer Who The Presidents Couldn't Ignore. Retrieved 26.11.2022 from the online database, https://www.whitehousehistory.org/benjamin-banneker
+
+NPS.gov. (2022)Benjamin Banneker and the Boundary Stones of the District of Columbia. Retrieved 26.11.2022 from the online database, https://www.nps.gov/places/sw-9-intermediate-boundary-stone-of-the-district-of-columbia.htm/index.htm
+
+Image copyright:
+This media file is in the public domain in the United States. This applies to U.S. works where the copyright has expired, often because its first publication occurred prior to January 1, 1927, and if not then due to lack of notice or renewal. See this page for further explanation.
+https://en.wikipedia.org/wiki/File:Benjamin_Banneker_Portrait.jpg
+
+## 5.4 Media
+
+The media used in this website:
+
+- Benjamin Banneker Photo (In public domain)
+- Social Media Icons created by <a href="https://fontawesome.com/">FontAwesome</a>
+- Video in <a href="https://ericjonesdev.github.io/benjamin-banneker-history/index.html#video">Video</a> section: Created by <a href="https://www.youtube.com/watch?v=DKnwyVR4P88">Ted-Ed</a>

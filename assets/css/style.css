@@ -19,7 +19,7 @@ body {
     background: linear-gradient(135deg, var(--primary), var(--secondary)),
                 url('../images/pexels-cottonbro-studio-10506091.jpg') no-repeat center center / cover;
     
-    overflow: hidden;
+    overflow: scroll;
     display: flexbox;
     justify-content: center;
     margin: auto;
