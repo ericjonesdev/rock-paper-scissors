@@ -3,14 +3,14 @@
 <a href="https://ericjonesdev.github.io/rock-paper-scissors/">Visit the live webpage</a>
 
 
-
+<img src="assets/images/amIresponsive.png">
 
 # 1. Project Overview
 
 Paper, Rock, and Scissor is an interactive web app centered on allowing the user to pass the time playing a fun game. The look, feel, and functionality will be explained in the following sections:
 ## 1.1 Project Objective
 
-The project objective was to have 
+The project objective was to create an interactive and visually appealing web app, catering to those who enjoy video games, as well as games of chance. 
 
 ## 1.2 User Stories
 
@@ -19,36 +19,37 @@ The project objective was to have
 
 - As a first time user I want an excellent visual experience
 - As a first time user I want to quickly understand what the site is about. 
-- As a first time user I want to also have video and interactive content.
+- As a first time user I want to easily interact with website content.
 - As a first time user I want the ability to easily navigate the site.
 - As a first time user I want to easily distingish this site as a trusted site which is safe to use. 
 
 ### Returning users
 
-- As a returning user I would like to see regular updates.
-- As a returning user I would like to have periodic updates.
-- As a returing user I would like to learn more about the subject matter. 
+- As a returning user I would like to see regular game updates.
+- As a returning user I would like to have a history of my gaming score.
 
 ### Site Owner
 
-- As a site owner I want to provide an intuitive learning experience.
-- As a site owner I want to funnel traffic to my subscription list.
-- As a site owner I want to provide a way for users to contact me.
+- As a site owner I want to provide a fun and interactive gaming experience.
+- As a site owner I want to have my site visually stand out.
 
 ## 1.3 Design
 
 
-To serve as a historical website, a simplistic but functional design was needed. This combination served two primary purposes. The first purpose, simplicity, was used to maintaine a pleasant look and asthetic to cater to younger users, while having content structures that would appeal to teachers and higher acedmics. 
+To serve as a gaming website, a simplistic but functional design was needed. This combination served two primary purposes. The first purpose, simplicity, was used to maintaine a pleasant look and asthetic to cater to younger users, while having content structures that would appeal to users of varying age groups.
 
 Where applicable, accessibility and useability regarding color schematics, semantic markup, and overall structure where adhered to. 
 
-The familiar colors red, white and blue were used due to the subject matter and his assistance in designing the American captial. The home decor color "rule" of 60%, 30%, and 10% was applied to the genre of web development, so as not to over-use one color while relying too heavily on another. 
+<img src="assets/images/Linear gradient 1.png">
 
-<img src="assets/images/color rule1.png">
+A root CSS statement was used to place color-contrasting colors on the body background.
+Using further CSS statements:
 
-The rule for color uses was as follows: 60% white tones, 30% blue, and 10% red tones.  This made for an eye-pleasing user experience. 
+<img src="assets/images/Linear gradient 2.png">
 
-Aside from the 10% red color schema, the base color palette (along with slight variations) is as follows in the image below:
+A pleasantly-colored and visually appealing background is serviced to the end-user. 
+
+This site uses the 60&, 30%, and 10% rule, in reference to site color, meaning 60% of the site color is the linear gradient, 30% is the yellow & neon highlights, and 10% is the white text color.
 
 <img src="assets/images/ColorSpace - Color Palettes Generator and Color Gradient Tool.png">
  
