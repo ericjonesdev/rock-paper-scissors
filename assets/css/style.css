@@ -20,7 +20,7 @@ body {
                 url('../images/pexels-cottonbro-studio-10506091.jpg') no-repeat center center / cover;
     
     overflow: scroll;
-    display: flexbox;
+    display: block;
     justify-content: center;
     margin: auto;
     height: 1200px;
@@ -202,8 +202,8 @@ div > img {
 
 @media (max-width:400px) {
     div img {
-        max-width: auto !important;
-        max-height: auto !important;
+        max-width: auto;
+        max-height: auto;
     }
     .choice-area {
         display: flex;
