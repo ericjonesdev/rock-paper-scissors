@@ -202,8 +202,8 @@ div > img {
 
 @media (max-width:400px) {
     div img {
-        max-width: auto;
-        max-height: auto;
+        max-width: 100%;
+        max-height: 100%;
     }
     .choice-area {
         display: flex;
