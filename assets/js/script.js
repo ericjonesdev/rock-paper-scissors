@@ -22,70 +22,70 @@ let resetButton = document.getElementById("resetScore");
 
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userChoice = e.target.id
-    resultDisplay.innerHTML = userChoice
-    compChoice = generateComputerChoice()
-    gameImages(userChoice, computerChoice)
+    userChoice = e.target.id;
+    resultDisplay.innerHTML = userChoice;
+    compChoice = generateComputerChoice();
+    gameImages(userChoice, computerChoice);
 
-    getResult()
+    getResult();
 }));
 
 function generateComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3) + 1
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
     
     if (randomNumber === 1) {
-        computerChoice = 'rock'
+        computerChoice = 'rock';
     }
     if (randomNumber === 2) {
-        computerChoice = 'paper'
+        computerChoice = 'paper';
     }
     if (randomNumber === 3) {
-        computerChoice = 'scissors'
+        computerChoice = 'scissors';
     }
-    computerChoiceDisplay.innerHTML = computerChoice 
-};
+    computerChoiceDisplay.innerHTML = computerChoice;
+}
 
 function getResult () {
     if (computerChoice === userChoice) {
-        result = "It's a draw!"
+        result = "It's a draw!";
     }
     if (computerChoice === 'rock'  && userChoice === 'paper') {
-        result = "You Win!"
-        incrementUserScore()
+        result = "You Win!";
+        incrementUserScore();
         console.log("paperWin");
     }
     if (computerChoice === 'rock'  && userChoice === 'scissors') {
-        result = "You lost!"
-        incrementComputerScore()
+        result = "You lost!";
+        incrementComputerScore();
     }
     if (computerChoice === 'paper'  && userChoice === 'scissors') {
-        result = "You Win!"
-        incrementUserScore()
+        result = "You Win!";
+        incrementUserScore();
     }
     if (computerChoice === 'paper'  && userChoice === 'rock') {
-        result = "You lost!"
-        incrementComputerScore()
+        result = "You lost!";
+        incrementComputerScore();
     }
     if (computerChoice === 'scissors'  && userChoice === 'rock') {
-        result = "You win!"
-        incrementUserScore()
+        result = "You win!";
+        incrementUserScore();
     }
     if (computerChoice === 'scissors'  && userChoice === 'paper') {
-        result = "You lose!"
-        incrementComputerScore()
+        result = "You lose!";
+        incrementComputerScore();
     }
-    resultOutput.innerHTML = result
+    resultOutput.innerHTML = result;
 };
     
 function gameImages(playerChoice, computerChoice) {
-    console.log(playerChoice, computerChoice)
+    console.log(playerChoice, computerChoice);
 
-    playerImage.src = `assets/images/${playerChoice}.jpg`
+    playerImage.src = `assets/images/${playerChoice}.jpg`;
 	playerImage.alt = choices [userChoice];
 
-	computerImage.src = `assets/images/${computerChoice}.jpg`
-	computerImage.alt = choices[computerChoice]
-};
+	computerImage.src = `assets/images/${computerChoice}.jpg`;
+	computerImage.alt = choices[computerChoice];
+}
 
 /**
  * Gets the user score from the DOM and increments it by 1
@@ -96,18 +96,18 @@ function incrementUserScore() {
     score++;
     playerScore.innerHTML = score;
     console.log(playerScore);
-};
+}
 
 
 /**
  * Gets the computer score from the DOM and increments it by 1
  */
 function incrementComputerScore() {
-    mistakes++
+    mistakes++;
     compScore.innerHTML = score;
     console.log(compScore);
 
-};
+}
 
 function resetScore() {
     score = 0;
@@ -115,4 +115,4 @@ function resetScore() {
     playerScore.innerHTML = score;
     compScore.innerHTML = mistakes;  
 
-};
+}
