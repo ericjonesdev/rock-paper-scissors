@@ -1,24 +1,24 @@
-const computerChoiceDisplay = document.getElementById('computer-choice')
-const buttons = document.getElementsByClassName('control')
-const userChoiceDisplay = document.getElementById('player-choice')
-const resultDisplay = document.getElementById('result')
-const possibleChoices = document.querySelectorAll('button')
-const resultOutput = document.getElementById('result-output')
-const playerImage = document.getElementById('player-image')
-const computerImage = document.getElementById('computer-image')
-const choices = ["rock", "paper", "scissors"]
-let userChoice
-let computerChoice
-let result  
-let playerChoice 
+const computerChoiceDisplay = document.getElementById('computer-choice');
+const buttons = document.getElementsByClassName('control');
+const userChoiceDisplay = document.getElementById('player-choice');
+const resultDisplay = document.getElementById('result');
+const possibleChoices = document.querySelectorAll('button');
+const resultOutput = document.getElementById('result-output');
+const playerImage = document.getElementById('player-image');
+const computerImage = document.getElementById('computer-image');
+const choices = ["rock", "paper", "scissors"];
+let userChoice;
+let computerChoice;
+let result  ;
+let playerChoice ;
 let score = 0;
 let mistakes = 0;
-let scoreContainer
-let userSpan
-let computerSpan
-let playerScore = document.getElementById("userScore")
-let compScore = document.getElementById("compScore")
-let resetButton = document.getElementById("resetScore")
+let scoreContainer;
+let userSpan;
+let computerSpan;
+let playerScore = document.getElementById("userScore");
+let compScore = document.getElementById("compScore");
+let resetButton = document.getElementById("resetScore");
 
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -28,7 +28,7 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     gameImages(userChoice, computerChoice)
 
     getResult()
-}))
+}));
 
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1
@@ -43,7 +43,7 @@ function generateComputerChoice() {
         computerChoice = 'scissors'
     }
     computerChoiceDisplay.innerHTML = computerChoice 
-}
+};
 
 function getResult () {
     if (computerChoice === userChoice) {
@@ -75,7 +75,7 @@ function getResult () {
         incrementComputerScore()
     }
     resultOutput.innerHTML = result
-}
+};
     
 function gameImages(playerChoice, computerChoice) {
     console.log(playerChoice, computerChoice)
@@ -85,7 +85,7 @@ function gameImages(playerChoice, computerChoice) {
 
 	computerImage.src = `assets/images/${computerChoice}.jpg`
 	computerImage.alt = choices[computerChoice]
-}
+};
 
 /**
  * Gets the user score from the DOM and increments it by 1
@@ -96,7 +96,7 @@ function incrementUserScore() {
     score++;
     playerScore.innerHTML = score;
     console.log(playerScore);
-}
+};
 
 
 /**
@@ -107,7 +107,7 @@ function incrementComputerScore() {
     compScore.innerHTML = score;
     console.log(compScore);
 
-}
+};
 
 function resetScore() {
     score = 0;
@@ -115,4 +115,4 @@ function resetScore() {
     playerScore.innerHTML = score;
     compScore.innerHTML = mistakes;  
 
-}
+};
