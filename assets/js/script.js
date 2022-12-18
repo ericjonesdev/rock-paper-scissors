@@ -11,6 +11,14 @@ let userChoice
 let computerChoice
 let result  
 let playerChoice 
+let score = 0;
+let mistakes = 0;
+let scoreContainer
+let userSpan
+let computerSpan
+let playerScore = document.getElementById("userScore")
+let compScore = document.getElementById("compScore")
+let resetButton = document.getElementById("resetScore")
 
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -43,21 +51,28 @@ function getResult () {
     }
     if (computerChoice === 'rock'  && userChoice === 'paper') {
         result = "You Win!"
+        incrementUserScore()
+        console.log("paperWin");
     }
     if (computerChoice === 'rock'  && userChoice === 'scissors') {
         result = "You lost!"
+        incrementComputerScore()
     }
     if (computerChoice === 'paper'  && userChoice === 'scissors') {
         result = "You Win!"
+        incrementUserScore()
     }
     if (computerChoice === 'paper'  && userChoice === 'rock') {
         result = "You lost!"
+        incrementComputerScore()
     }
     if (computerChoice === 'scissors'  && userChoice === 'rock') {
         result = "You win!"
+        incrementUserScore()
     }
     if (computerChoice === 'scissors'  && userChoice === 'paper') {
         result = "You lose!"
+        incrementComputerScore()
     }
     resultOutput.innerHTML = result
 }
@@ -72,3 +87,32 @@ function gameImages(playerChoice, computerChoice) {
 	computerImage.alt = choices[computerChoice]
 }
 
+/**
+ * Gets the user score from the DOM and increments it by 1
+ */
+function incrementUserScore() {
+    console.log("incrementing");
+    // playerScore = playerScore++
+    score++;
+    playerScore.innerHTML = score;
+    console.log(playerScore);
+}
+
+
+/**
+ * Gets the computer score from the DOM and increments it by 1
+ */
+function incrementComputerScore() {
+    mistakes++
+    compScore.innerHTML = score;
+    console.log(compScore);
+
+}
+
+function resetScore() {
+    score = 0;
+    mistakes = 0;
+    playerScore.innerHTML = score;
+    compScore.innerHTML = mistakes;  
+
+}

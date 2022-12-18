@@ -25,6 +25,7 @@
                 <button aria-label="Rock" id="rock" data-choice=""="rock" class="control">ROCK</button>
                 <button aria-label="Paper" id="paper" data-choice=""="paper" class="control">PAPER</button>
                 <button aria-label="Scissors" id="scissors" data-choice="scissors" class="control">SCISSORS</button>
+                <button aria-label="resetButton" id="resetScore">RESET</button>
             </div>
             <div class="winner-area">
                 <h2 class="gameText" id="winnerIs"><span id="result-output"></span></h2>
@@ -38,14 +39,14 @@
         <section>
         <div class="player" id="player">
             <div class="score-one" id="scoreOne"></div>
-            <h2>Player: <span id="player-choice" class="user-score">Score: 0</span></h2>
+            <h2><span id="player-choice" class="user-score"></span><span>Player:</span><span id="userScore">0</span></h2>
             <img id="player-image" src="assets/images/rock-paper-scissors-1238146.jpg" alt="Rock Paper Scissors">
         </div>
         </section>
         <section>
         <div class="computer" id="computer">
             <div class="score-two" id="scoreTwo"></div>
-            <h2>Computer: <span id="computer-choice" class="computer-score">Score: 0</span></h2>
+            <h2><span id="computer-choice" class="computer-score"></span><span>Computer:</span><span id="compScore">0</span></h2>
             <img id="computer-image" src="assets/images/rock-paper-scissors-1238146.jpg" alt="Rock Paper Scissors">
         </div>
         </section>
