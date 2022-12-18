@@ -2,7 +2,7 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const buttons = document.getElementsByClassName('control');
 const userChoiceDisplay = document.getElementById('player-choice');
 const resultDisplay = document.getElementById('result');
-const possibleChoices = document.querySelectorAll('button');
+const possibleChoices = document.getElementsByClassName('control');
 const resultOutput = document.getElementById('result-output');
 const playerImage = document.getElementById('player-image');
 const computerImage = document.getElementById('computer-image');
@@ -21,7 +21,7 @@ let compScore = document.getElementById("compScore");
 let resetButton = document.getElementById("resetScore");
 
 
-possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+Array.from(possibleChoices).forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     resultDisplay.innerHTML = userChoice;
     compChoice = generateComputerChoice();
@@ -29,6 +29,8 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 
     getResult();
 }));
+
+document.getElementById("resetScore").addEventListener("click", resetScore);
 
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
