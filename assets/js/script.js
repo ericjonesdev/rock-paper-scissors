@@ -106,7 +106,7 @@ function incrementUserScore() {
  */
 function incrementComputerScore() {
     mistakes++;
-    compScore.innerHTML = score;
+    compScore.innerHTML = mistakes;
     console.log(compScore);
 
 }
