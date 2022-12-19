@@ -1,4 +1,4 @@
-# Benjamin Banneker
+# Paper Rock Scissors Game
 
 <a href="https://ericjonesdev.github.io/rock-paper-scissors/">Visit the live webpage</a>
 
