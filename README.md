@@ -20,7 +20,7 @@ The project objective was to create an interactive and visually appealing web ap
 - As a first time user I want an excellent visual experience
 - As a first time user I want to quickly understand what the site is about. 
 - As a first time user I want to easily interact with website content.
-- As a first time user I want the ability to easily navigate the site.
+- As a first time user I want to understand how the game is played.
 - As a first time user I want to easily distingish this site as a trusted site which is safe to use. 
 
 ### Returning users
@@ -57,11 +57,11 @@ To accomodate for the variying viewport types, media queries were employed for o
 
 # 2. Features
 
-The website was organized into three main pages which are the home, about, and contact page.
-## 2.1 Header & Navbar
-The website was organized into three main pages which are the home, about, and contact page. Internal links were used on the home page to link to the various sections of that page, thereby creating a more efficient user experience. 
+The website is a single stand-alone page which gives the user the ability to play the well-known Paper, Rock, and Scissors game.
+## 2.1 Header Area
+The website was organized into four main sections, those being the header, choices area, main game section, and the footer. 
 
-<img src="assets/images/Benjamin Bannaker_ Navbar1.png">
+<img src="assets/images/HeaderArea.png">
 
 ## 2.2 About Us section
 
