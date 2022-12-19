@@ -1,5 +1,6 @@
-#Table of Contents
+# Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Paper Rock Scissors Game](#paper-rock-scissors-game)
 - [1. Project Overview](#1-project-overview)
   - [1.1 Project Objective](#11-project-objective)
