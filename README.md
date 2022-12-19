@@ -49,8 +49,6 @@ A pleasantly-colored and visually appealing background is serviced to the end-us
 
 This site uses the 60&, 30%, and 10% rule, in reference to site color, meaning 60% of the site color is the linear gradient, 30% is the yellow & neon highlights, and 10% is the white text color.
 
-<img src="assets/images/ColorSpace - Color Palettes Generator and Color Gradient Tool.png">
-
 To accomodate for the variying viewport types, media queries were employed for overall responsiveness across platforms.
 
 # 2. Features
