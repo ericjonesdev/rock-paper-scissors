@@ -19,6 +19,7 @@ let computerSpan;
 let playerScore = document.getElementById("userScore");
 let compScore = document.getElementById("compScore");
 let resetButton = document.getElementById("resetScore");
+let compChoice;
 
 
 Array.from(possibleChoices).forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -77,7 +78,7 @@ function getResult () {
         incrementComputerScore();
     }
     resultOutput.innerHTML = result;
-};
+}
     
 function gameImages(playerChoice, computerChoice) {
     console.log(playerChoice, computerChoice);
