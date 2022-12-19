@@ -61,47 +61,36 @@ The website is a single stand-alone page which gives the user the ability to pla
 ## 2.1 Header Area
 The website was organized into four main sections, those being the header, choices area, main game section, and the footer. 
 
+The header section was used to notify the end-user exactly what game this website features.
+
 <img src="assets/images/HeaderArea.png">
 
-## 2.2 About Us section
+## 2.2 Game Choices Area
 
-The About us section illustrates to the user the reasons behind the website creation and informs as to the nature of the site owners.
+The game choices area gives the user the opportunity to choose between paper, rock, scissors, and to reset the game if desired.
 
-<img src="assets/images/Benjamin Bannaker_ AboutUs12.png">
+As the game progresses, to the right of the reset button there is an area that dynamically tells the user who won the current game.
+
+<img src="assets/images/ChoicesArea.png">
 
 
-## 2.3 Legendary section
+## 2.3 Score Count & Images Area
 
-The Legendary section is used to illustrate some of the crowning achievements of Benjamin Banneker. This section should instill in the mind of the user exactly why this historical personage was so important to American history and, thereby, make plain why the site was created.
-<img src="assets/images/Benjamin Bannaker_ Legendary2.png">
+The game score section has the following functionalies:<br>
+  1. Upon the user making a choice, the image changes to reflect this choice.
+  2. The game winer score count tally is incremented by 1 for every successful game won. A draw will result in no incrementation of user or computer score.
 
-## Additional Information (Video Section)
+<img src="assets/images/DynamicImagesArea.png">
 
-The last section before the site footer is the video section, which serves as a video media source detailing further information about the site topic. 
+## Footer Section
 
-This section, along with the Legendary section was styled to stack, one above the other, on smaller devices, principally mobile.
+The footer section contains the game rules with which the user can use to play the game. The information is centered and right below the score and images area.
 
-<img src="assets/images/BenBanneker_videosection.png">
+<img src="assets/images/FooterArea.png">
 
-## 2.6 Contact Us Form Page
+## 2.6 Features to Implement
 
-The contact us form shared the overal color rule schematic as all other pages of the site, with highlight red colors being used to draw emphasis to the first and last name text input areas. 
-
-On mobile devices the form resizes to fit the appropriate area seamlessly. 
-
-<img src="assets/images/Benjamin Bannaker_ contactus.png">
-<img src="assets/images/Benjamin Bannaker_ contactus1.png">
-
-## 2.7 The Footer Section
-The footer section included links to the relevant social media sites for Benjamin Banneker. The links will open to a new tab to allow easy navigation for the user.
-
-<img src="assets/images/Benjamin Bannaker_ footer1.png">
-
-## 2.8 Future development
-Additional features (future)that are desired to be developed and implement are as follows:
-  1. Additional page beautification (form section) and added background images.
-  2. Embedded google maps which show historical family dwellings and any known Benjamin Banneker museum information.
-  3. Interactive Javascript history learning game page.
+When there is time, I would like to add a player high score area, so that returning users are able to see their placement within all users who may have played the game on this website. 
 
 # 3. Testing
 
