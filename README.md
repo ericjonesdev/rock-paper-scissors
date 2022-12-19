@@ -1,3 +1,32 @@
+#Table of Contents
+
+- [Paper Rock Scissors Game](#paper-rock-scissors-game)
+- [1. Project Overview](#1-project-overview)
+  - [1.1 Project Objective](#11-project-objective)
+  - [1.2 User Stories](#12-user-stories)
+    - [First time users](#first-time-users)
+    - [Returning users](#returning-users)
+    - [Site Owner](#site-owner)
+  - [1.3 Design](#13-design)
+- [2. Features](#2-features)
+  - [2.1 Header Area](#21-header-area)
+  - [2.2 Game Choices Area](#22-game-choices-area)
+  - [2.3 Score Count \& Images Area](#23-score-count--images-area)
+  - [Footer Section](#footer-section)
+  - [2.4 Features to Implement](#24-features-to-implement)
+- [3. Testing](#3-testing)
+  - [3.1 HTML Validation](#31-html-validation)
+    - [Home Page](#home-page)
+  - [3.2 CSS Validation](#32-css-validation)
+  - [Acessibility Validation Service](#acessibility-validation-service)
+  - [3.3 Lighthouse](#33-lighthouse)
+  - [3.4 Manual Testing User Stories](#34-manual-testing-user-stories)
+  - [3.5 Bugs and Fixes](#35-bugs-and-fixes)
+- [4. Deployment](#4-deployment)
+- [5. Credits](#5-credits)
+  - [5.1 Images Used](#51-images-used)
+
+
 # Paper Rock Scissors Game
 
 <a href="https://ericjonesdev.github.io/rock-paper-scissors/">Visit the live webpage</a>
