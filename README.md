@@ -86,7 +86,7 @@ The footer section contains the game rules with which the user can use to play t
 
 <img src="assets/images/FooterArea.png">
 
-## 2.6 Features to Implement
+## 2.4 Features to Implement
 
 When there is time, I would like to add a player high score area, so that returning users are able to see their placement within all users who may have played the game on this website.
 
@@ -116,14 +116,14 @@ The Wave web accessibility evaluation tool was used to ensure that the site pass
 
 <img src="assets/images/WAVEASSESIBILITY-wave.webaim.org-2022.12.18-23_03_10.png">
 
-## 3.4 Lighthouse
+## 3.3 Lighthouse
 
 The Lighthouse performance app was used to test the website performance.
 <hr>
 
 <img src="assets/images/LighthouseEval-googlechrome.github.io-2022.12.18-23_12_25.png">
 
-## 3.5 Manual Testing User Stories
+## 3.4 Manual Testing User Stories
 
 |       User Story                                                                                             |                       Testing                                                                                                                             |
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -136,7 +136,7 @@ The Lighthouse performance app was used to test the website performance.
 | As a site owner I want to enable a score tracker to display highest score.                                  | Feature slotted for a future build. |
 | As a site owner I want to ensure a visually appealing site.                                   | The website styles and design were crafted with great care and attention to detail.                                                              |
 
-## 3.6 Bugs and Fixes
+## 3.5 Bugs and Fixes
 
 Some bugs that were discovered and corrected throughout the development:
  | Bug                                                                                                                  | Fix                                                                                                |
