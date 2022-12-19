@@ -1,3 +1,4 @@
+/*variable statements follow*/
 const computerChoiceDisplay = document.getElementById('computer-choice');
 const buttons = document.getElementsByClassName('control');
 const userChoiceDisplay = document.getElementById('player-choice');
@@ -21,7 +22,10 @@ let compScore = document.getElementById("compScore");
 let resetButton = document.getElementById("resetScore");
 let compChoice;
 
-
+/**
+ * This Array from statement sets event listener to the button class control array
+ * which listens for the user and computer choices which are fed to the getresult function
+ */
 Array.from(possibleChoices).forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     resultDisplay.innerHTML = userChoice;
@@ -31,8 +35,16 @@ Array.from(possibleChoices).forEach(possibleChoice => possibleChoice.addEventLis
     getResult();
 }));
 
+/**
+ * This adds an event listener for the reset button
+ */
 document.getElementById("resetScore").addEventListener("click", resetScore);
 
+
+/**
+ * This function generates a random number for the computer and displays
+ * the output to the innerHTML
+ */
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
     
@@ -48,6 +60,10 @@ function generateComputerChoice() {
     computerChoiceDisplay.innerHTML = computerChoice;
 }
 
+/**
+ * Provides the logic to determin what to do in the event that either 
+ * the user or computer wins, as well as what to do in the even of a draw.
+ */
 function getResult () {
     if (computerChoice === userChoice) {
         result = "It's a draw!";
@@ -80,6 +96,10 @@ function getResult () {
     resultOutput.innerHTML = result;
 }
     
+/**
+ * This function allows for the dynamic change of images based on user or 
+ * computer choices.
+ */
 function gameImages(playerChoice, computerChoice) {
     console.log(playerChoice, computerChoice);
 
@@ -112,6 +132,10 @@ function incrementComputerScore() {
 
 }
 
+/**
+ * This function provides the logic used to reset the user and
+ * computer score back to zero, upon the user request.
+ */
 function resetScore() {
     score = 0;
     mistakes = 0;
