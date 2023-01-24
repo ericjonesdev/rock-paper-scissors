@@ -145,7 +145,7 @@ function resetScore() {
 }
 
 /**
- * This function is to limit the amount of playable paper, rock, and scissors game to best out of 10
+ * This function is to limit the amount of playable paper, rock, and scissors game to best out of 9
  */
 function limitGameToBestOutOfTen () { 
     // Variables to store the player and computer scores
@@ -153,7 +153,7 @@ function limitGameToBestOutOfTen () {
     let compScore = 0;
   
     // Create a loop to limit the game to 10 rounds
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 9; i++) {
       // Play a round of paper, rock, scissors
       let result = playRound();
   
