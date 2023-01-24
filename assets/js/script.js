@@ -143,3 +143,39 @@ function resetScore() {
     compScore.innerHTML = mistakes;  
 
 }
+
+/**
+ * This function is to limit the amount of playable paper, rock, and scissors game to best out of 10
+ */
+function limitGameToBestOutOfTen () { 
+    // Variables to store the player and computer scores
+    let playerScore = 0;
+    let compScore = 0;
+  
+    // Create a loop to limit the game to 10 rounds
+    for (let i = 0; i < 10; i++) {
+      // Play a round of paper, rock, scissors
+      let result = playRound();
+  
+      // Add the result to the respective scores
+      if (result === 'player') {
+        playerScore++;
+      } else if (result === 'computer') {
+        compScore++;
+      }
+    }
+  
+    // Check who has the higher score
+    if (playerScore > compScore) {
+      alert('Player has won the game!');
+    } else if (compScore > playerScore) {
+      alert('Computer has won the game!');
+    } else {
+      alert('It\'s a tie!');
+    }
+  
+    // Reset the scores 
+    playerScore = 0;
+    compScore = 0;
+  }
+  
