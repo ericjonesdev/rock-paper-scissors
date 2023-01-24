@@ -26,6 +26,7 @@
 - [4. Deployment](#4-deployment)
 - [5. Credits](#5-credits)
   - [5.1 Images Used](#51-images-used)
+  - [5.1 Code](#51-code)
 
 
 # Paper Rock Scissors Game
@@ -202,3 +203,8 @@ https://unsplash.com/@imanitor?utm_source=unsplash&utm_medium=referral&utm_conte
 three friends by cottonbro studio: https://www.pexels.com/photo/friends-playing-together-10506091/
 
 https://www.freeimages.com/download/rock-paper-scissors-1238146
+
+## 5.1 Code
+
+The following github respository was used as a template upon which this website was built:
+https://github.com/kubowania/rock￾paper-scissors-x3/blob/main/rock-paper-scissors￾examples/rock-paper-scissors-example-1/app.js
