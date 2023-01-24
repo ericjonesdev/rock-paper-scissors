@@ -152,7 +152,7 @@ function limitGameToBestOutOfTen () {
     let playerScore = 0;
     let compScore = 0;
   
-    // Create a loop to limit the game to 10 rounds
+    // Create a loop to limit the game to 9 rounds
     for (let i = 0; i < 9; i++) {
       // Play a round of paper, rock, scissors
       let result = playRound();
