@@ -21,6 +21,7 @@ let playerScore = document.getElementById("userScore");
 let compScore = document.getElementById("compScore");
 let resetButton = document.getElementById("resetScore");
 let compChoice;
+let completedRounds = 0;
 
 /**
  * This Array from statement sets event listener to the button class control array
@@ -119,6 +120,7 @@ function incrementUserScore() {
     score++;
     playerScore.innerHTML = score;
     console.log(playerScore);
+    completeRound()
 }
 
 
@@ -129,6 +131,7 @@ function incrementComputerScore() {
     mistakes++;
     compScore.innerHTML = mistakes;
     console.log(compScore);
+    completeRound()
 
 }
 
@@ -148,34 +151,43 @@ function resetScore() {
  * This function is to limit the amount of playable paper, rock, and scissors game to best out of 9
  */
 function limitGameToBestOutOfTen () { 
-    // Variables to store the player and computer scores
-    let playerScore = 0;
-    let compScore = 0;
+
+    // // Create a loop to limit the game to 9 rounds
+    // for (let i = 0; i < 9; i++) {
+    //   // Play a round of paper, rock, scissors
+    //   let result = playRound();
   
-    // Create a loop to limit the game to 9 rounds
-    for (let i = 0; i < 9; i++) {
-      // Play a round of paper, rock, scissors
-      let result = playRound();
-  
-      // Add the result to the respective scores
-      if (result === 'player') {
-        playerScore++;
-      } else if (result === 'computer') {
-        compScore++;
-      }
-    }
+    //   // Add the result to the respective scores
+    //   if (result === 'player') {
+    //     playerScore++;
+    //   } else if (result === 'computer') {
+    //     mistakes++;
+    //   }
+    // }
   
     // Check who has the higher score
-    if (playerScore > compScore) {
+    if (score > mistakes) {
+      console.log('Player has won the game!');
       alert('Player has won the game!');
-    } else if (compScore > playerScore) {
+    } else if (mistakes > score) {
+      console.log('Computer has won the game!');
       alert('Computer has won the game!');
     } else {
+      console.log('It\'s a tie!');
       alert('It\'s a tie!');
     }
   
     // Reset the scores 
-    playerScore = 0;
-    compScore = 0;
+    score = 0;
+    mistakes = 0;
   }
   
+
+function completeRound() {
+        // increment a completed round
+        completedRounds++;
+        console.log("Completed Rounds: " + completedRounds)
+        if (completedRounds == 10) {
+            limitGameToBestOutOfTen()
+        }
+}
