@@ -207,4 +207,4 @@ https://www.freeimages.com/download/rock-paper-scissors-1238146
 ## 5.2 Code
 
 The following github respository was used as a template upon which this website was built:
-https://github.com/kubowania/rock￾paper-scissors-x3/blob/main/rock-paper-scissors￾examples/rock-paper-scissors-example-1/app.js
+https://github.com/kubowania/rock-paper-scissors-x3/blob/main/rock-paper-scissors-examples/rock-paper-scissors-example-1/app.js
