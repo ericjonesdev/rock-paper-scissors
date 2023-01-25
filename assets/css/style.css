@@ -144,7 +144,8 @@ img {
   footer {
     display: flex;
     justify-content: center;
-    color:beige;
+    color: #fff;
+    font-size:larger;
     margin-top: 20px;
   }
 
