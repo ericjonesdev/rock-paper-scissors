@@ -150,7 +150,7 @@ function resetScore() {
 /**
  * This function is to limit the amount of playable paper, rock, and scissors game to best out of 9
  */
-function limitGameToBestOutOfTen () { 
+function limitGameToBestOutOfNine () { 
 
     // // Create a loop to limit the game to 9 rounds
     // for (let i = 0; i < 9; i++) {
@@ -188,6 +188,6 @@ function completeRound() {
         completedRounds++;
         console.log("Completed Rounds: " + completedRounds)
         if (completedRounds == 10) {
-            limitGameToBestOutOfTen()
+            limitGameToBestOutOfNine()
         }
 }
