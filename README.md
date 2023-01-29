@@ -98,24 +98,24 @@ The header section was used to notify the end-user exactly what game this websit
 
 The game choices area gives the user the opportunity to choose between paper, rock, scissors, and to reset the game if desired.
 
-As the game progresses, to the right of the reset button there is an area that dynamically tells the user who won the current game.
+As the game progresses, to the beneath the reset button there is an area that dynamically tells the user who won the current game via small text. As the game is being played, the background DIV colors are dynamically changed via a javascript function to reflect the winner of the round. Green indicates a win for the round and red represents the loser of the round.
 
-<img src="assets/images/ChoicesArea.png">
+<img src="assets/images/gamechoicearea.png">
 
 ## 2.3 Score Count & Images Area
 
 The game score section has the following functionalies:<br>
 
-  1. Upon the user making a choice, the image changes to reflect this choice.
+  1. Upon the user making a choice, the image and background color changes to reflect this choice.
   2. The game winer score count tally is incremented by 1 for every successful game won. A draw will result in no incrementation of user or computer score.
 
-<img src="assets/images/DynamicImagesArea.png">
+<img src="assets/images/colorofwinnerloser.png">
 
 ## Footer Section
 
 The footer section contains the game rules with which the user can use to play the game. The information is centered and right below the score and images area.
 
-<img src="assets/images/FooterArea.png">
+<img src="assets/images/therulestothegame.png">
 
 ## 2.4 Features to Implement
 
