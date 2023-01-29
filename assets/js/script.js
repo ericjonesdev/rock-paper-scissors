@@ -91,10 +91,11 @@ function getResult () {
         incrementUserScore();
     }
     if (computerChoice === 'scissors'  && userChoice === 'paper') {
-        result = "You lose!";
+        result = "You lost!";
         incrementComputerScore();
     }
     resultOutput.innerHTML = result;
+    toggleBackgroundColor()
 }
     
 /**
@@ -152,19 +153,6 @@ function resetScore() {
  */
 function limitGameToBestOutOfNine () { 
 
-    // // Create a loop to limit the game to 9 rounds
-    // for (let i = 0; i < 9; i++) {
-    //   // Play a round of paper, rock, scissors
-    //   let result = playRound();
-  
-    //   // Add the result to the respective scores
-    //   if (result === 'player') {
-    //     playerScore++;
-    //   } else if (result === 'computer') {
-    //     mistakes++;
-    //   }
-    // }
-  
     // Check who has the higher score
     if (score > mistakes) {
       console.log('Player has won the game!');
@@ -190,4 +178,32 @@ function completeRound() {
         if (completedRounds == 10) {
             limitGameToBestOutOfNine()
         }
+}
+
+/***
+ * This function toggles the background color of the .player .computer class
+ * based on the winner of the current game. The winner color is green and the loser color is red
+ */
+function toggleBackgroundColor() {
+    const player = document.getElementById('player');
+    const computer = document.getElementById('computer');
+    const winner = resultOutput.innerHTML.toLowerCase();
+
+    console.log(winner)
+
+    if (winner.includes('you win')) {
+        console.log('win')
+        player.style.backgroundColor = "#00FF00"; 
+        computer.style.backgroundColor = "#FF0000"; 
+    } 
+    else if (winner.includes('you lost')) {
+        console.log('lose')
+        player.style.backgroundColor = "#FF0000"; 
+        computer.style.backgroundColor = "#00FF00";
+    } 
+    else {
+        console.log('draw')
+        player.style.backgroundColor = "#00FF00"; 
+        computer.style.backgroundColor = "#00FF00";
+    } 
 }
