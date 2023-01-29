@@ -31,7 +31,7 @@
 
 # Paper Rock Scissors Game
 
-<a href="https://ericjonesdev.github.io/rock-paper-scissors/" target="_blank">Visit the live webpage</a> [Paper Rock Scissors](https://ericjonesdev.github.io/rock-paper-scissors/){:target="_blank" rel=noopener"}
+%md <a href="https://ericjonesdev.github.io/rock-paper-scissors/" target="_blank">Visit the live webpage</a>
 
 <img src="assets/images/amIresponsive1.png">
 
