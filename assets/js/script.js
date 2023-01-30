@@ -1,7 +1,5 @@
 /*variable statements follow*/
 const computerChoiceDisplay = document.getElementById('computer-choice');
-const buttons = document.getElementsByClassName('control');
-const userChoiceDisplay = document.getElementById('player-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.getElementsByClassName('control');
 const resultOutput = document.getElementById('result-output');
@@ -10,8 +8,8 @@ const computerImage = document.getElementById('computer-image');
 const choices = ["rock", "paper", "scissors"];
 let userChoice;
 let computerChoice;
-let result  ;
-let playerChoice ;
+let result;
+let playerChoice;
 let score = 0;
 let mistakes = 0;
 let scoreContainer;
@@ -95,7 +93,7 @@ function getResult () {
         incrementComputerScore();
     }
     resultOutput.innerHTML = result;
-    toggleBackgroundColor()
+    toggleBackgroundColor();
 }
     
 /**
@@ -176,7 +174,7 @@ function completeRound() {
         completedRounds++;
         console.log("Completed Rounds: " + completedRounds)
         if (completedRounds == 10) {
-            limitGameToBestOutOfNine()
+            limitGameToBestOutOfNine();
         }
 }
 
@@ -189,20 +187,20 @@ function toggleBackgroundColor() {
     const computer = document.getElementById('computer');
     const winner = resultOutput.innerHTML.toLowerCase();
 
-    console.log(winner)
+    console.log(winner);
 
     if (winner.includes('you win')) {
-        console.log('win')
+        console.log('win');
         player.style.backgroundColor = "#00FF00"; 
         computer.style.backgroundColor = "#FF0000"; 
     } 
     else if (winner.includes('you lost')) {
-        console.log('lose')
+        console.log('lose');
         player.style.backgroundColor = "#FF0000"; 
         computer.style.backgroundColor = "#00FF00";
     } 
     else {
-        console.log('draw')
+        console.log('draw');
         player.style.backgroundColor = "#00FF00"; 
         computer.style.backgroundColor = "#00FF00";
     } 
