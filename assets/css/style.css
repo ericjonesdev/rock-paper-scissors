@@ -72,9 +72,15 @@ h1 {
     font-size: 20px;
     font-weight: 500;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     transition: 100ms;
     
+}
+
+#resetScore {
+    background-color: red;
+    color: rgb(6, 6, 143);
+    font-weight: bolder;
 }
 
 .choice-area button:hover {
