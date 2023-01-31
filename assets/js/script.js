@@ -130,8 +130,11 @@ function resetScore() {
  * This function is to limit the amount of playable paper, rock, and scissors game to best out of 9
  */
 function limitGameToBestOutOfNine () { 
-    let score = parseInt(document.getElementById("userScore")).innerText;
-    let mistakes = parseInt(document.getElementById("compScore")).innerText;
+    let score = parseInt(document.getElementById("userScore").innerText);
+    let mistakes = parseInt(document.getElementById("compScore").innerText);
+
+    console.log(score);
+    console.log(mistakes);
 
     // Check who has the higher score
     if (score > mistakes) {
@@ -141,7 +144,6 @@ function limitGameToBestOutOfNine () {
     } else {
       alert('It\'s a tie!');
     }
-  
   }
   
 /***
