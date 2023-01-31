@@ -33,7 +33,7 @@
 
 <a href="https://ericjonesdev.github.io/rock-paper-scissors/">Visit the live webpage</a>
 
-<img src="assets/images/amIresponsive1.png">
+<img src="assets/images/amIresponsive8.png">
 
 # 1. Project Overview
 
@@ -100,7 +100,7 @@ The game choices area gives the user the opportunity to choose between paper, ro
 
 As the game progresses, to the beneath the reset button there is an area that dynamically tells the user who won the current game via small text. As the game is being played, the background DIV colors are dynamically changed via a javascript function to reflect the winner of the round. Green indicates a win for the round and red represents the loser of the round.
 
-<img src="assets/images/gamechoicearea.png">
+<img src="assets/images/gamechoicesarea1.png">
 
 ## 2.3 Score Count & Images Area
 
@@ -109,7 +109,7 @@ The game score section has the following functionalies:<br>
   1. Upon the user making a choice, the image and background color changes to reflect this choice.
   2. The game winer score count tally is incremented by 1 for every successful game won. A draw will result in no incrementation of user or computer score.
 
-<img src="assets/images/colorofwinnerloser.png">
+<img src="assets/images/keepscorearea.png">
 
 ## Footer Section
 
