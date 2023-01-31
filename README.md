@@ -156,7 +156,7 @@ The Lighthouse performance app was used to test the website performance.
 
 JsHint version 2.13.6 was used to test the javascript for the site and did not return any major issues that needed to be addressed within this iteration of the game. 
 
-<img src="assets/images/screenshot-jshint.com-2022.12.19-12_00_57.png">
+<img src="assets/images/jshint.png">
 
 ## 3.4 Manual Testing User Stories
 

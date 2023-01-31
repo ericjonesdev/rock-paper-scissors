@@ -111,9 +111,9 @@ function incrementUserScore() {
 function incrementComputerScore() {
     let oldScore = parseInt(document.getElementById("compScore").innerText);
     document.getElementById("compScore").innerText = ++oldScore;
-    completeRound()
+    completeRound();
 
-};
+}
 
 /**
  * This function provides the logic used to reset the user and
@@ -154,9 +154,9 @@ function completeRound() {
         
         if (userScore + computerScore === 9) {
             limitGameToBestOutOfNine();
-            resetScore()
+            resetScore();
         }
-};
+}
 
 /***
  * This function toggles the background color of the .player .computer class
