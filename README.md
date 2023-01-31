@@ -129,11 +129,11 @@ All documents were validated using the free W3C Markup validation service. A maj
 
 <img src="assets/images/screenshot-validator.w3.org-2022.12.18-17_16_23_HTML.png">
 
-Chrome development tools, as well as Firefox development tools where used to view each page and page behavior for functionality.
+Chrome development tools, as well as Firefox development tools where used to view the site behavior for functionality.
 
 ### Home Page
 
-<img src="assets/images/homepage.png">
+<img src="assets/images/homepage1.png">
 
 ## 3.2 CSS Validation
 
@@ -145,14 +145,14 @@ To validate the site CSS, the site CSS file was uploaded to the W3C Jigsaw valid
 
 The Wave web accessibility evaluation tool was used to ensure that the site passed the industry-standard accessibility criteria. The results indicated no errors and good site structure.
 
-<img src="assets/images/WAVEASSESIBILITY-wave.webaim.org-2022.12.18-23_03_10.png">
+<img src="assets/images/wavechecker.png">
 
 ## 3.3 Lighthouse
 
 The Lighthouse performance app was used to test the website performance.
 <hr>
 
-<img src="assets/images/LighthouseEval-googlechrome.github.io-2022.12.18-23_12_25.png">
+<img src="assets/images/lighthouse_accessibility.png">
 
 JsHint version 2.13.6 was used to test the javascript for the site and did not return any major issues that needed to be addressed within this iteration of the game. 
 

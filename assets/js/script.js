@@ -20,7 +20,7 @@ Array.from(possibleChoices).forEach(possibleChoice => possibleChoice.addEventLis
 
     getResult();
 }));
-};
+}
 
 
 /**
@@ -87,9 +87,7 @@ function gameImages(playerChoice, computerChoice) {
     computerChoice = document.getElementById("computer-choice").innerHTML;
     const playerImage = document.getElementById('player-image');
     const computerImage = document.getElementById('computer-image');
-    console.log(playerChoice)
-    console.log(computerChoice)
-
+    
     playerImage.src = `assets/images/${playerChoice}.jpg`;
 	playerImage.alt = choices [userChoice];
 
@@ -115,7 +113,7 @@ function incrementComputerScore() {
     document.getElementById("compScore").innerText = ++oldScore;
     completeRound()
 
-}
+};
 
 /**
  * This function provides the logic used to reset the user and
@@ -158,7 +156,7 @@ function completeRound() {
             limitGameToBestOutOfNine();
             resetScore()
         }
-}
+};
 
 /***
  * This function toggles the background color of the .player .computer class
@@ -185,4 +183,4 @@ function toggleBackgroundColor() {
     } 
 }
 
-document.onload = arrayMethod()
+document.onload = arrayMethod();
