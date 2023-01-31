@@ -2,6 +2,7 @@
 
 const choices = ["rock", "paper", "scissors"];
 const resultOutput = document.getElementById('result-output');
+let roundsPlayed = 0;
 
 /**
  * This Array from statement within the function sets event listener to the button class control array
@@ -48,30 +49,37 @@ function getResult () {
     userChoice = document.getElementById('result').innerText;
     if (computerChoice === userChoice) {
         result = "It's a draw!";
+        resultOutput.innerHTML = result;
+        completeRound();
     }
     else if (computerChoice === 'rock'  && userChoice === 'paper') {
         result = "You Win!";
+        resultOutput.innerHTML = result;
         incrementUserScore();
-        console.log("paperWin");
     }
     else if (computerChoice === 'rock'  && userChoice === 'scissors') {
         result = "You lost!";
+        resultOutput.innerHTML = result;
         incrementComputerScore();
     }
     else if (computerChoice === 'paper'  && userChoice === 'scissors') {
         result = "You Win!";
+        resultOutput.innerHTML = result;
         incrementUserScore();
     }
     else if (computerChoice === 'paper'  && userChoice === 'rock') {
         result = "You lost!";
+        resultOutput.innerHTML = result;
         incrementComputerScore();
     }
     else if (computerChoice === 'scissors'  && userChoice === 'rock') {
         result = "You win!";
+        resultOutput.innerHTML = result;
         incrementUserScore();
     }
     else if (computerChoice === 'scissors'  && userChoice === 'paper') {
         result = "You lost!";
+        resultOutput.innerHTML = result;
         incrementComputerScore();
     }
     resultOutput.innerHTML = result;
@@ -122,6 +130,7 @@ function incrementComputerScore() {
 function resetScore() {
     document.getElementById("userScore").innerText = 0;
     document.getElementById("compScore").innerText = 0; 
+    roundsPlayed = 0;
 }
 
 /**
@@ -131,10 +140,7 @@ function limitGameToBestOutOfNine () {
     let score = parseInt(document.getElementById("userScore").innerText);
     let mistakes = parseInt(document.getElementById("compScore").innerText);
 
-    console.log(score);
-    console.log(mistakes);
 
-    // Check who has the higher score
     if (score > mistakes) {
       alert('Player has won the game!');
     } else if (mistakes > score) {
@@ -152,10 +158,13 @@ function completeRound() {
         let userScore = parseInt(document.getElementById("userScore").innerText);
         let computerScore = parseInt(document.getElementById("compScore").innerText);
         
-        if (userScore + computerScore === 9) {
+        roundsPlayed++
+        console.log(roundsPlayed);
+        if (roundsPlayed === 9) {
             limitGameToBestOutOfNine();
             resetScore();
         }
+
 }
 
 /***
