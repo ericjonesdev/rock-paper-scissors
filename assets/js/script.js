@@ -82,7 +82,6 @@ function getResult () {
         resultOutput.innerHTML = result;
         incrementComputerScore();
     }
-    resultOutput.innerHTML = result;
     toggleBackgroundColor();
 }
     
@@ -139,7 +138,7 @@ function resetScore() {
 function limitGameToBestOutOfNine () { 
     let score = parseInt(document.getElementById("userScore").innerText);
     let mistakes = parseInt(document.getElementById("compScore").innerText);
-
+    
 
     if (score > mistakes) {
       alert('Player has won the game!');
@@ -159,8 +158,8 @@ function completeRound() {
         let computerScore = parseInt(document.getElementById("compScore").innerText);
         
         roundsPlayed++
-        console.log(roundsPlayed);
-        if (roundsPlayed === 9) {
+        
+        if (roundsPlayed > 9) {
             limitGameToBestOutOfNine();
             resetScore();
         }
