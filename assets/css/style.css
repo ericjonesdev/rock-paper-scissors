@@ -194,7 +194,11 @@ img {
     }
 }
 
-
+@media screen and (max-width: 499px) {
+    div.game-rules {
+        display: grid;
+    }
+}
   
     
 
