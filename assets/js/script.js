@@ -158,8 +158,8 @@ function completeRound() {
         let computerScore = parseInt(document.getElementById("compScore").innerText);
         
         roundsPlayed++
-        
-        if (roundsPlayed > 9) {
+
+        if (roundsPlayed == 9) {
             limitGameToBestOutOfNine();
             resetScore();
         }
