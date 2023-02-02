@@ -2,23 +2,24 @@
 
 const choices = ["rock", "paper", "scissors"];
 const resultOutput = document.getElementById('result-output');
-let roundsPlayed = 0;
+
 
 /**
  * This Array from statement within the function sets event listener to the button class control array
  * which listens for the user and computer choices which are fed to the getresult function
  */
+document.addEventListener("DOMContentLoaded", function() {
+	arrayMethod();
+})
 function arrayMethod() {
     const resultDisplay = document.getElementById('result');
     const possibleChoices = document.getElementsByClassName('control');
     let computerChoice = document.getElementById('computer-choice').innerText;
-
 Array.from(possibleChoices).forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id;
     resultDisplay.innerHTML = userChoice;
     compChoice = generateComputerChoice();
     gameImages(userChoice, computerChoice);
-
     getResult();
 }));
 }
@@ -49,39 +50,33 @@ function getResult () {
     userChoice = document.getElementById('result').innerText;
     if (computerChoice === userChoice) {
         result = "It's a draw!";
-        resultOutput.innerHTML = result;
         completeRound();
     }
     else if (computerChoice === 'rock'  && userChoice === 'paper') {
         result = "You Win!";
-        resultOutput.innerHTML = result;
         incrementUserScore();
     }
     else if (computerChoice === 'rock'  && userChoice === 'scissors') {
         result = "You lost!";
-        resultOutput.innerHTML = result;
         incrementComputerScore();
     }
     else if (computerChoice === 'paper'  && userChoice === 'scissors') {
         result = "You Win!";
-        resultOutput.innerHTML = result;
         incrementUserScore();
     }
     else if (computerChoice === 'paper'  && userChoice === 'rock') {
         result = "You lost!";
-        resultOutput.innerHTML = result;
         incrementComputerScore();
     }
     else if (computerChoice === 'scissors'  && userChoice === 'rock') {
         result = "You win!";
-        resultOutput.innerHTML = result;
         incrementUserScore();
     }
     else if (computerChoice === 'scissors'  && userChoice === 'paper') {
         result = "You lost!";
-        resultOutput.innerHTML = result;
         incrementComputerScore();
     }
+    document.getElementById('result-output').innerHTML = result
     toggleBackgroundColor();
 }
     
@@ -157,9 +152,8 @@ function completeRound() {
         let userScore = parseInt(document.getElementById("userScore").innerText);
         let computerScore = parseInt(document.getElementById("compScore").innerText);
         
-        roundsPlayed++
 
-        if (roundsPlayed == 9) {
+        if ((userScore + computerScore) == 9) {
             limitGameToBestOutOfNine();
             resetScore();
         }
@@ -190,5 +184,3 @@ function toggleBackgroundColor() {
         computer.style.backgroundColor = "#00FF00";
     } 
 }
-
-document.onload = arrayMethod();
